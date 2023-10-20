@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator | Home</title>
+  <link rel="shortcut icon" href="/assets/logo-brand.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/hamburger-min.css">
+  <link rel="stylesheet" href="/css/hamburger.css">
+  <script src="js/app.js" defer></script>
+  <script src="js/hamburger.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="bg-image">
+      <img src="/assets/bg.png" alt="" srcset="">
+    </div>
+    <header id="home">
+      <div class="navigation">
+        <div class="logo">
+          <a href=""><img src="/assets/logo-brand.png" alt="" srcset=""></a>
+        </div>
+        <nav class="menu-items">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#app">Generate</a></li>
+            <li><a href="#table">Reference</a></li>
+          </ul>
+        </nav>
+        <div class="menuBtn">
+          <button class="hamburger hamburger--3dx-r" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-section column">
+        <div class="hero-description column">
+          <h1>Generate Strong and Secure Passwords with Ease: Your Trusted Password Generator</h1>
+          <p>Protect Your Digital Security with Customizable, Randomized, and Unbreakable Passwords. Fortify Your Online Defense with an Advanced Password Generator: Safeguard Your Accounts and Data from Cyber Threats</p>
+          <button class="primary-button" onclick="window.location.href='#about'">Learn More</button>
+        </div>
+        <div class="password-container" id="app">
+          <div class="text-input-container">
+            <input type="text" disabled placeholder="j2ewh*5"/>
+            <button ><img src="/assets/bx-copy.svg" alt="Copy" srcset=""></button>
+          </div>
+          <form >
+            <div class="customize-container">
+              <div class="range-container">
+                <label for="">
+                  <p>Character Length</p>
+                  <p id="number-value">0</p>
+                </label>
+                <input type="range" min="4" max="15" value="4">
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" name="includeUpperCase" id="upper">
+                <label for="upper">Include Uppercase Letters</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" name="includeUpperCase" id="lower">
+                <label for="lower">Include Lowercase Letters</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" name="includeNumber" id="number">
+                <label for="number">Include Numbers</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" name="includeSymbols" id="symbol">
+                <label for="symbol">Include Symbols</label>
+              </div>
+              <div class="strength-container">
+                <p>Strength</p>
+                <div class="meter-container">
+                  <img src="/assets/status.png" alt="Status" srcset="">
+                </div>
+              </div>
+              <button class="primary-button" id="generate-btn">Generate<img src="/assets/bx-right-arrow-alt.svg" alt="Copy" srcset=""></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section-head">
+        <h2>Why do you need a password generator?</h2>
+      </div>
+      <div class="section-body">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-head">
+              <img src="/assets/icons8-lock-30.png" alt="" srcset="">
+              <p>Unparalleled Security</p>
+            </div>
+            <div class="card-body">
+              <p>Our password generator employs advanced algorithms to generate highly secure passwords that are resistant to hacking attempts. With a mix of letters, numbers, and special characters, your passwords will be virtually impossible to crack.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <img src="/assets/secure.png" alt="" srcset="">
+              <p>Simplified Password Management</p>
+            </div>
+            <div class="card-body">
+              <p>Say goodbye to the hassle of remembering complex passwords. Our generator allows you to easily create unique passwords for each of your accounts, making it effortless to manage and protect your digital presence.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <img src="/assets/provision.png" alt="" srcset="">
+              <p>Customization and Flexibility</p>
+            </div>
+            <div class="card-body">
+              <p>Tailor your passwords to meet specific requirements. Our generator enables you to choose the length, character types, and complexity level, ensuring your passwords align with various platform guidelines while still being easy for you to remember.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <img src="/assets/save-time.png" alt="" srcset="">
+              <p>Time-Saving Convenience</p>
+            </div>
+            <div class="card-body">
+              <p>Generating strong passwords manually can be time-consuming and challenging. Our password generator eliminates the guesswork by instantly providing you with robust passwords at the click of a button. Save valuable time and focus on what matters most while keeping your online security intact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="table">
+      <div class="section-head">
+        <h2>How safe is your password?</h2>
+      </div>
+      <div class="section-body">
+        <div class="table-container">
+          <table>
+            <tr>
+                <th>Numbers of Characters</th>
+                <th>Numbers Only</th>
+                <th>Lowercase Letter</th>
+                <th>Uppercase and Lowercase Letter</th>
+                <th>Numbers, Uppercase and Lowercase Letter</th>
+                <th>Numbers, Uppercase and Lowercase, Symbols</th>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="red">1 sec</td>
+                <td class="red">5 secs</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td class="purple">Instantly</td>
+                <td class="purple">Instantly</td>
+                <td class="red">25 secs</td>
+                <td class="red">1 min</td>
+                <td class="red">6 mins</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td class="purple">Instantly</td>
+                <td class="red">5 secs</td>
+                <td class="red">22 mins</td>
+                <td class="red">1 hour</td>
+                <td class="red">8 hours</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td class="purple">Instantly</td>
+                <td class="red">2 mins</td>
+                <td class="red">19 hours</td>
+                <td class="orange">3 days</td>
+                <td class="orange">3 weeks </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td class="purple">Instantly</td>
+                <td class="red">58 mins</td>
+                <td class="orange">1 month</td>
+                <td class="orange">7 month</td>
+                <td class="orange">5 years</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td class="red">2 secs</td>
+                <td class="orange">1 days</td>
+                <td class="orange">5 years</td>
+                <td class="yellow">41 years</td>
+                <td class="yellow">400 years</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td class="red">25 secs</td>
+                <td class="orange">3 weeks</td>
+                <td  class="yellow">300 years</td>
+                <td class="yellow">2k years</td>
+                <td class="yellow">34k years</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td class="red">4 mins</td>
+                <td class="orange">1 year</td>
+                <td class="yellow">16k years</td>
+                <td class="yellow">100k years</td>
+                <td class="green">2m years</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td class="red">41 mins</td>
+                <td class="yellow">51 year</td>
+                <td class="yellow">800k years</td>
+                <td class="green">9m years</td>
+                <td class="green">200m years</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td class="red">6 hours</td>
+                <td class="yellow">1k year</td>
+                <td class="green">43m years</td>
+                <td class="green">600m years</td>
+                <td class="green">15bn years</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-body">
+        <div class="about-container column row-reverse">
+          <div class="about-description column w">
+            <h3>The ultimate tool for safeguarding your digital security!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, provident eveniet placeat ex rerum esse. Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="about-boxes">
+           <div class="box">
+            <span class="number-box">1</span> 
+            <p><span>Select a length:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure enim magni aliquam unde. Accusantium omnis veritatis praesentium .</p>
+           </div>
+           <div class="box">
+               <span class="number-box">2</span> 
+            <p><span>Select password characters:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolorem beatae voluptatibus doloribus vero, at soluta dolor nulla.. </p>
+           </div>
+           <div class="box">
+            <span class="number-box">3</span> 
+            <p><span>Generate:</span> With our generator, you can bid farewell to weak, easily guessable passwords that leave you vulnerable to cyber threats.</p>
+           </div>
+          </div>
+        </div>
+        <div class="about-container column-reverse ">
+          <div class="bg-image">
+            <img src="/assets/bg.png" alt="" srcset="">
+          </div>
+          <div class="about-description column">
+            <h3>The ultimate tool for safeguarding your digital security!</h3>
+            <p>In today's interconnected world, protecting your online presence is of paramount importance. Our password generator offers a comprehensive solution to create strong and secure passwords effortlessly.  </p>
+           
+          </div>
+          <div class="about-image">
+            <img src="/assets/security-image.png" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="section-head">
+        <h2>Why do you need a password generator?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+        <button class="primary-button" onclick="window.location.href='#app'">Try Now</button>
+      </div>
+    </section>
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="logo">
+        <a href="#home"> <img src="/assets/logo-brand.png" alt="LOGO" srcset=""></a>
+       </div>
+       <nav>
+         <ul>
+           <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#app">Generate</a></li>
+           <li><a href="#table">Reference</a></li>
+         </ul>
+       </nav>
+       <p class="license">© 2023 Ivan. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
